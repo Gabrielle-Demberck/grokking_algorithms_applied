@@ -9,11 +9,15 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         height: 90,
         width: MediaQuery.sizeOf(context).width,
         alignment: Alignment.center,
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20.0), topRight: Radius.circular(20.0)),
+        decoration: BoxDecoration(
+          border: Border.all(width: 1),
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(20.0),
+            topRight: Radius.circular(20.0),
+          ),
           color: Color.fromARGB(220, 0, 0, 0),
         ),
+        padding: const EdgeInsets.all(10),
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

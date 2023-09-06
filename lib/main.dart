@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'view/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return MaterialApp( 
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyanAccent),
         useMaterial3: true,
